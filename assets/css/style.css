@@ -284,3 +284,42 @@ table.compare .btn { display: inline-block; margin-top: 8px; }
 @media (max-width: 700px) {
   .more-guides li { flex-direction: column; gap: 2px; }
 }
+
+/* ---------- printable recipe card ---------- */
+.recipe-card { background: var(--paper); border: 1px solid var(--gold-soft); outline: 1px solid var(--gold-soft); outline-offset: -8px; border-radius: var(--radius); padding: 28px 26px 24px; margin: 36px 0 40px; box-shadow: var(--shadow); }
+.recipe-card .recipe-card-head { text-align: left; margin-bottom: 18px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.recipe-card .recipe-card-head .kicker { margin-bottom: 8px; }
+.recipe-card .recipe-card-head h2, .recipe-card .recipe-card-head h3 { margin: 0 0 8px; font-size: 30px; font-weight: 400; padding-top: 0; }
+.recipe-card .recipe-card-head h2::before, .recipe-card .recipe-card-head h3::before { display: none; }
+.recipe-card .recipe-dek { margin: 0 0 12px; color: var(--ink-soft); }
+.recipe-meta { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 0 0 14px; padding: 0; list-style: none; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); }
+.recipe-meta li { margin: 0; }
+.recipe-card .recipe-print { margin-top: 4px; cursor: pointer; background: transparent; font: inherit; }
+.recipe-card h3 { font-size: 20px; margin: 22px 0 10px; }
+.recipe-ingredients, .recipe-steps { margin: 0 0 8px; padding-left: 1.2em; }
+.recipe-ingredients li, .recipe-steps li { margin: 0 0 .45em; }
+.recipe-scale { width: 100%; border-collapse: collapse; font-size: 15px; margin: 8px 0 16px; }
+.recipe-scale th, .recipe-scale td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+.recipe-scale th { background: var(--blush); font-family: var(--sans); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; font-weight: 500; }
+.recipe-note { background: var(--blush); border-radius: 12px; padding: 14px 16px; margin: 16px 0 0; }
+.recipe-note p { margin: 0; }
+@media print {
+  .recipe-print { display: none !important; }
+  body.print-recipe .topbar,
+  body.print-recipe .site-header,
+  body.print-recipe .page-head,
+  body.print-recipe .post-art,
+  body.print-recipe .disclosure,
+  body.print-recipe .toc,
+  body.print-recipe .shop-guide,
+  body.print-recipe .share-row,
+  body.print-recipe .section,
+  body.print-recipe .site-footer,
+  body.print-recipe .skip { display: none !important; }
+  body.print-recipe .prose > *:not(.recipe-card.print-this) { display: none !important; }
+  body.print-recipe .recipe-card.print-this { outline: none; box-shadow: none; border: 1px solid #ccc; margin: 0; padding: 0; }
+  body.print-recipe article, body.print-recipe .prose, body.print-recipe main { display: block !important; background: #fff; }
+}
+@media (max-width: 700px) {
+  .recipe-scale { font-size: 14px; }
+}
