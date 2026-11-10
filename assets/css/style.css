@@ -471,3 +471,36 @@ table.compare .btn { display: inline-block; margin-top: 8px; }
 @media print {
   .pin-save { display: none !important; }
 }
+
+/* Editorial hub pages and homepage hub tiles */
+.hub { max-width: 780px; margin: 0 auto 64px; padding: 0 22px; }
+.hub-intro { margin: 8px 0 36px; }
+.hub-group { margin: 0 0 42px; }
+.hub-group h2 { font-size: 32px; font-weight: 500; margin: 0 0 8px; }
+.hub-deck { color: var(--ink-soft); margin: 0 0 16px; font-size: 17px; }
+.hub-list { list-style: none; padding: 0; margin: 0; }
+.hub-list li { border-bottom: 1px solid var(--line); padding: 16px 0; }
+.hub-list li:first-child { border-top: 1px solid var(--line); }
+.hub-list a { color: var(--ink); text-decoration: none; font-family: var(--serif); font-size: 24px; font-weight: 500; overflow-wrap: break-word; }
+.hub-list a:hover { color: var(--tan-dark); }
+.hub-list p { margin: 6px 0 0; color: var(--ink-soft); font-size: 16px; line-height: 1.45; overflow-wrap: break-word; }
+.hub-also-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px 22px; }
+.hub-also-list a { font-family: var(--serif); font-size: 22px; color: var(--ink); text-decoration: none; }
+.hub-also-list a:hover { color: var(--tan-dark); }
+.hub-tiles { display: grid; grid-template-columns: repeat(5, 1fr); gap: 22px; }
+.hub-tile { display: flex; flex-direction: column; text-decoration: none; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 20px 18px; box-shadow: var(--shadow); min-width: 0; }
+.hub-tile .kicker { margin: 0 0 8px; }
+.hub-tile h3 { font-size: 22px; font-weight: 500; margin: 0 0 10px; overflow-wrap: break-word; }
+.hub-tile p { margin: 0 0 16px; color: var(--ink-soft); font-size: 15px; line-height: 1.4; flex: 1; overflow-wrap: break-word; }
+.hub-tile .link-arrow { margin-top: auto; }
+.meta-sep { color: var(--ink-soft); padding: 0 4px; }
+@media (max-width: 980px) {
+  .hub-tiles { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 700px) {
+  .hub { padding: 0 18px; margin-bottom: 48px; }
+  .hub-group h2 { font-size: 26px; }
+  .hub-list a { font-size: 22px; }
+  .hub-tiles { grid-template-columns: 1fr; gap: 16px; }
+  .foot-hubs, .foot-cats { margin-bottom: 8px; }
+}
