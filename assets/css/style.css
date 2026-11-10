@@ -323,3 +323,42 @@ table.compare .btn { display: inline-block; margin-top: 8px; }
 @media (max-width: 700px) {
   .recipe-scale { font-size: 14px; }
 }
+
+/* Official Pinterest Save button wrappers */
+.pin-save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  margin: 18px 0 0;
+}
+.pin-save-label {
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+.recipe-card-head .pin-save {
+  justify-content: flex-start;
+  margin: 12px 0 0;
+}
+.recipe-card-head .pin-save-label {
+  letter-spacing: .08em;
+}
+/* Let the official widget size itself; don't clip it */
+.pin-save a[data-pin-do],
+.pin-save span[class^="PIN_"],
+.pin-save span[data-pin-href] {
+  flex: 0 0 auto;
+  line-height: 0;
+}
+@media (max-width: 700px) {
+  .pin-save { margin-top: 16px; }
+  .page-head .pin-save { padding: 0 8px; }
+}
+@media print {
+  .pin-save { display: none !important; }
+}
