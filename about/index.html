@@ -73,5 +73,18 @@
     <p class="fine">&copy; 2026 Kindle &amp; Cloth</p>
   </div>
 </footer>
+<script>
+document.querySelectorAll("[data-print-recipe]").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    var card = btn.closest(".recipe-card");
+    if (!card) return;
+    document.body.classList.add("print-recipe");
+    card.classList.add("print-this");
+    window.print();
+    document.body.classList.remove("print-recipe");
+    card.classList.remove("print-this");
+  });
+});
+</script>
 </body>
 </html>
