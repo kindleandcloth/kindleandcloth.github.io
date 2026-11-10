@@ -95,6 +95,10 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; line-height: 1.15;
 .feature .frame { border-radius: 260px 260px 18px 18px; }
 .feature h2 { font-size: clamp(32px, 3.4vw, 46px); font-weight: 400; }
 .feature p { color: var(--ink-soft); }
+.feature-also { margin-top: 52px; padding-top: 48px; border-top: 1px solid var(--line); gap: 44px; }
+.feature-also h2 { font-size: clamp(26px, 2.8vw, 36px); }
+.feature-also .frame.photo { aspect-ratio: 4 / 3.2; }
+
 
 /* category medallions */
 .cats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 26px; }
