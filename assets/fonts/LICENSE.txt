@@ -1,0 +1,4 @@
+Fonts self-hosted on this site (subsetted to Latin), all licensed under the SIL Open Font License 1.1 (https://openfontlicense.org):
+- Cormorant Garamond — Copyright Christian Thalmann (Catharsis Fonts)
+- Jost — Copyright The Jost Project Authors (Owen Earl / indestructible type*)
+- Great Vibes — Copyright TypeSETit, LLC (Robert Leuschke)
