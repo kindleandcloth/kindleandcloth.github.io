@@ -650,6 +650,25 @@ table.compare .btn { display: inline-block; margin-top: 8px; }
 .template-card-copy .shop-template-note { display: block; margin-top: 12px; }
 .template-card-photo .pin-save { justify-content: flex-start; margin-top: 12px; }
 
+
+.templates-collection-lede {
+  max-width: 640px;
+  margin: -8px auto 36px;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 16.5px;
+  line-height: 1.6;
+}
+.templates-collection .templates-bundle { margin: 0 0 40px; }
+.templates-pieces-head {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 26px;
+  text-align: center;
+  margin: 0 0 28px;
+  color: var(--ink);
+}
+
 .templates-coming-lede {
   max-width: 640px;
   margin: -8px auto 28px;
