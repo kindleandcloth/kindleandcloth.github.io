@@ -731,6 +731,18 @@ table.compare .btn { display: inline-block; margin-top: 8px; }
 .prose .post-faq .faq-list { margin: 0; max-width: none; }
 .prose .post-faq .faq-item h3 { font-size: 22px; margin: 0 0 8px; font-weight: 600; }
 .prose .post-faq .faq-item p + p { margin-top: 0.7em; }
+.gift-group { margin: 1.8em 0 2em; }
+.gift-item { margin: 0 0 1.35em; padding: 1.05em 1.15em 1.1em; background: var(--paper); border: 1px solid var(--gold-soft); border-radius: var(--radius); }
+.gift-item h3 { font-size: 22px; margin: 0 0 0.45em; }
+.gift-item h3 a { text-decoration: none; }
+.gift-item h3 a:hover { text-decoration: underline; text-decoration-color: var(--gold); }
+.gift-why { margin: 0; }
+.gift-why .kicker { display: block; margin-bottom: 0.3em; color: var(--tan-dark); }
+@media (max-width: 640px) {
+  .gift-item { padding: 0.9em 0.95em 1em; }
+  .gift-item h3 { font-size: 20px; }
+}
+
 
 .templates-visit { text-align: center; margin: 8px 0 56px; }
 .templates-visit .btn { margin-bottom: 12px; }
