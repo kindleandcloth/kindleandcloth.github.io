@@ -947,3 +947,197 @@ table.compare .btn { display: inline-block; margin-top: 8px; }
 @media (min-width: 860px) {
   .site-search { top: 36px; }
 }
+
+/* ---------- newsletter signup ---------- */
+.checklist-bar {
+  margin: 0;
+  text-align: center;
+  background: #F9F5ED;
+  border-bottom: 1px solid var(--gold-soft);
+  padding: 10px 16px;
+}
+.checklist-bar a {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #B0674A;
+  min-height: 44px;
+  line-height: 44px;
+  padding: 0 8px;
+}
+.checklist-bar a:hover,
+.checklist-bar a[aria-current="page"] { color: #7A8C6E; }
+
+.signup {
+  background: #F9F5ED;
+  border: 1px solid #7A8C6E;
+  border-radius: var(--radius);
+  padding: 28px 22px 18px;
+  max-width: 640px;
+  margin: 36px auto 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.signup-footer { margin: 28px auto 16px; }
+.signup-post { margin: 8px auto 36px; }
+.signup-landing { margin: 0 auto; border: 0; padding: 8px 0 0; background: transparent; }
+.signup [data-form].inline-container { max-width: 100% !important; margin: 0 auto; }
+.signup [data-form] h1 {
+  font-family: var(--serif);
+  font-size: clamp(26px, 6vw, 34px);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--ink);
+  margin: 0 0 8px;
+}
+.signup-landing [data-form] h1 { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+.signup [data-form] .text-block,
+.signup [data-form] .fr-inner {
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+.signup [data-form] .text-block a { color: var(--tan-dark); }
+.signup [data-form] .main-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+.signup [data-form] .form-group,
+.signup [data-form] .emailoctopus-form-row { margin: 0; }
+.signup [data-form] input[type="email"],
+.signup [data-form] .form-control {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid #CED4DA;
+  border-radius: 10px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.signup [data-form] input[type="email"]:focus,
+.signup [data-form] .form-control:focus {
+  outline: 2px solid #7A8C6E;
+  outline-offset: 2px;
+  border-color: #7A8C6E;
+}
+.signup [data-form] input[type="submit"],
+.signup [data-form] .btn-primary {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 12px 18px;
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: #fff !important;
+  background: #B0674A !important;
+  border: 1px solid #B0674A !important;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.signup [data-form] input[type="submit"]:hover,
+.signup [data-form] .btn-primary:hover {
+  background: #96583e !important;
+  border-color: #96583e !important;
+  color: #fff !important;
+}
+.signup [data-form] .emailoctopus-success-message,
+.signup [data-form] .emailoctopus-error-message {
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--ink);
+  margin: 0 0 12px;
+}
+.signup [data-form] .mastfoot,
+.signup [data-form] .mastfoot p {
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin: 8px 0 0;
+}
+.signup [data-form] .emailoctopus-form-row-hp {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.signup-foot-link {
+  margin: 22px auto 8px !important;
+  font-size: 14px !important;
+}
+.signup-foot-link a { color: #B0674A; }
+
+.free-checklist {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: start;
+  max-width: 980px;
+  margin: 0 auto 72px;
+  padding-top: 12px;
+}
+.checklist-preview {
+  margin: 0;
+  background: #F9F5ED;
+  border: 1px solid var(--gold-soft);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: var(--shadow);
+}
+.checklist-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+.checklist-preview figcaption {
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin-top: 10px;
+  text-align: center;
+  line-height: 1.5;
+}
+.free-checklist-form { min-width: 0; position: sticky; top: 24px; }
+
+@media (max-width: 800px) {
+  .free-checklist { grid-template-columns: 1fr; gap: 28px; }
+  .free-checklist-form { position: static; }
+  .checklist-preview { max-width: 420px; margin: 0 auto; width: 100%; }
+}
+@media (max-width: 640px) {
+  .signup { padding: 22px 16px 14px; margin-left: 0; margin-right: 0; }
+  .signup-post { margin-left: 20px; margin-right: 20px; }
+}
+
+/* Keep hidden recaptcha chrome from causing a horizontal scrollbar */
+body { overflow-x: hidden; }
+.grecaptcha-badge { visibility: hidden; }
+
+@media print {
+  .checklist-bar, .signup, .signup-foot-link, .free-checklist { display: none !important; }
+}
+@media print {
+  body.print-recipe .checklist-bar,
+  body.print-recipe .signup { display: none !important; }
+}
