@@ -732,15 +732,23 @@ table.compare .btn { display: inline-block; margin-top: 8px; }
 .prose .post-faq .faq-item h3 { font-size: 22px; margin: 0 0 8px; font-weight: 600; }
 .prose .post-faq .faq-item p + p { margin-top: 0.7em; }
 .gift-group { margin: 1.8em 0 2em; }
-.gift-item { margin: 0 0 1.35em; padding: 1.05em 1.15em 1.1em; background: var(--paper); border: 1px solid var(--gold-soft); border-radius: var(--radius); }
-.gift-item h3 { font-size: 22px; margin: 0 0 0.45em; }
+.gift-item { display: grid; grid-template-columns: 220px 1fr; gap: 0.85em 1.2em; align-items: start; margin: 0 0 1.35em; padding: 1.05em 1.15em 1.1em; background: var(--paper); border: 1px solid var(--gold-soft); border-radius: var(--radius); }
+.gift-photo { margin: 0; }
+.gift-photo a { display: block; }
+.gift-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: calc(var(--radius) - 4px); background: #efe8de; }
+.gift-photo figcaption { font-size: 12px; line-height: 1.45; color: var(--ink-soft); font-style: italic; text-align: left; margin-top: 8px; }
+.gift-photo .credit { margin-top: 2px; letter-spacing: .05em; }
+.gift-copy h3 { font-size: 22px; margin: 0 0 0.45em; }
 .gift-item h3 a { text-decoration: none; }
 .gift-item h3 a:hover { text-decoration: underline; text-decoration-color: var(--gold); }
 .gift-why { margin: 0; }
 .gift-why .kicker { display: block; margin-bottom: 0.3em; color: var(--tan-dark); }
+.gift-shop { margin: 0.75em 0 0; }
+.gift-shop .btn { padding: 10px 16px; font-size: 11px; letter-spacing: .14em; }
 @media (max-width: 640px) {
-  .gift-item { padding: 0.9em 0.95em 1em; }
-  .gift-item h3 { font-size: 20px; }
+  .gift-item { grid-template-columns: 1fr; padding: 0.9em 0.95em 1em; }
+  .gift-copy h3 { font-size: 20px; }
+  .gift-photo { max-width: 280px; }
 }
 
 
