@@ -1177,3 +1177,145 @@ body { overflow-x: hidden; }
   body.print-recipe .checklist-bar,
   body.print-recipe .signup { display: none !important; }
 }
+
+/* ---------- Cinzel (popup headings) ---------- */
+@font-face { font-family: "Cinzel"; src: url("/assets/fonts/cinzel-var.woff2") format("woff2"); font-weight: 400 900; font-style: normal; font-display: swap; }
+
+/* ---------- checklist exit-intent popup ---------- */
+body.kc-popup-open { overflow: hidden; }
+.kc-popup[hidden] { display: none !important; }
+.kc-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.kc-popup-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(43, 38, 34, .48);
+}
+.kc-popup-dialog {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 640px;
+  max-height: min(90vh, 820px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  background: #F9F5ED;
+  border: 1px solid #7A8C6E;
+  border-radius: 18px;
+  padding: 12px 22px 24px;
+  box-shadow: 0 18px 40px -18px rgba(43, 38, 34, .45);
+  color: var(--ink);
+}
+.kc-popup-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  background: #F9F5ED;
+  margin: 0 -10px 4px 0;
+}
+.kc-popup-close {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #F9F5ED;
+  color: var(--ink);
+  cursor: pointer;
+}
+.kc-popup-close:hover,
+.kc-popup-close:focus-visible { color: #B0674A; }
+.kc-popup-close:focus-visible { outline: 2px solid #7A8C6E; outline-offset: 2px; }
+.kc-popup-logo {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin: 0 auto 12px;
+}
+.kc-popup-grid {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 22px;
+  align-items: center;
+}
+.kc-popup-preview {
+  margin: 0;
+}
+.kc-popup-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  border: 1px solid var(--gold-soft);
+  box-shadow: var(--shadow);
+  background: #F9F5ED;
+}
+.kc-popup-title {
+  font-family: "Cinzel", var(--serif);
+  font-weight: 600;
+  font-size: clamp(22px, 4vw, 28px);
+  line-height: 1.25;
+  letter-spacing: .02em;
+  color: var(--ink);
+  margin: 0 0 10px;
+  text-wrap: balance;
+}
+.kc-popup-copy p {
+  margin: 0 0 16px;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+.kc-popup-cta {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  min-height: 44px;
+  background: #B0674A;
+  border-color: #B0674A;
+  color: #fff;
+  margin: 0 0 12px;
+}
+.kc-popup-cta:hover,
+.kc-popup-cta:focus-visible {
+  background: #96583e;
+  border-color: #96583e;
+  color: #fff;
+}
+.kc-popup-fine {
+  margin: 0 !important;
+  font-size: 13px !important;
+  color: var(--ink-soft);
+}
+.kc-popup-fine a { color: var(--tan-dark); }
+
+@media (max-width: 640px) {
+  .kc-popup { padding: 10px; align-items: flex-end; }
+  .kc-popup-dialog {
+    max-width: 100%;
+    padding: 8px 16px 20px;
+    border-radius: 16px 16px 12px 12px;
+  }
+  .kc-popup-grid { grid-template-columns: 1fr; gap: 12px; }
+  .kc-popup-preview { max-width: 160px; margin: 0 auto; }
+  .kc-popup-logo { width: 132px; margin-bottom: 8px; }
+  .kc-popup-title { font-size: 22px; text-align: center; }
+  .kc-popup-copy { text-align: center; }
+}
+@media print {
+  .kc-popup { display: none !important; }
+}
