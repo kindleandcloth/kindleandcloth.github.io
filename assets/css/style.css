@@ -1005,16 +1005,47 @@ table.compare .btn { display: inline-block; margin-top: 8px; }
 .signup [data-form] .main-form {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
   gap: 10px;
+  width: 100%;
   max-width: 420px;
   margin: 0 auto;
 }
+.signup [data-form] [eo-form-fields-container],
+.signup [data-form] .form-container,
+.signup [data-form] .emailoctopus-form-wrapper,
+.signup [data-form] form.emailoctopus-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+.signup [data-form] .main-form .form-group,
+.signup [data-form] .main-form .emailoctopus-form-row,
 .signup [data-form] .form-group,
-.signup [data-form] .emailoctopus-form-row { margin: 0; }
+.signup [data-form] .emailoctopus-form-row {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+}
 .signup [data-form] input[type="email"],
 .signup [data-form] .form-control {
   display: block;
   width: 100%;
+  max-width: 100%;
   min-height: 44px;
   box-sizing: border-box;
   padding: 12px 16px;
@@ -1036,13 +1067,18 @@ table.compare .btn { display: inline-block; margin-top: 8px; }
   outline-offset: 2px;
   border-color: #7A8C6E;
 }
+.signup [data-form] .main-form input[type="submit"],
+.signup [data-form] .main-form .btn,
 .signup [data-form] input[type="submit"],
 .signup [data-form] .btn-primary {
   display: block;
   width: 100%;
+  max-width: 100%;
   min-height: 44px;
   box-sizing: border-box;
   margin: 0;
+  margin-left: 0;
+  margin-right: 0;
   padding: 12px 18px;
   font-family: var(--sans);
   font-size: 13px;
