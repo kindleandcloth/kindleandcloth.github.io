@@ -727,6 +727,10 @@ table.compare .btn { display: inline-block; margin-top: 8px; }
 .faq-item:first-child { border-top: 1px solid var(--line); }
 .faq-item h3 { font-size: 22px; margin: 0 0 6px; }
 .faq-item p { margin: 0; color: var(--ink-soft); font-size: 16px; line-height: 1.55; }
+.prose .post-faq { margin: 2.2em 0 0.4em; }
+.prose .post-faq .faq-list { margin: 0; max-width: none; }
+.prose .post-faq .faq-item h3 { font-size: 22px; margin: 0 0 8px; font-weight: 600; }
+.prose .post-faq .faq-item p + p { margin-top: 0.7em; }
 
 .templates-visit { text-align: center; margin: 8px 0 56px; }
 .templates-visit .btn { margin-bottom: 12px; }
@@ -770,7 +774,7 @@ table.compare .btn { display: inline-block; margin-top: 8px; }
   .templates-related-list { grid-template-columns: 1fr; }
   .how-steps li { grid-template-columns: 36px 1fr; column-gap: 12px; }
   .how-steps .step-n { width: 36px; height: 36px; font-size: 13px; }
-  .how-steps h3, .faq-item h3, .coming-card h3 { font-size: 20px; }
+  .how-steps h3, .faq-item h3, .coming-card h3, .prose .post-faq .faq-item h3 { font-size: 20px; }
 }
 
 
